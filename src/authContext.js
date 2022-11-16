@@ -1,13 +1,13 @@
 import { createContext, useContext, useState } from "react";
 
-const UserAuth = createContext();
+const userContext = createContext();
 
 export const ContextProvider = ({ children }) => {
   const [isClicked, setIsClicked] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <UserAuth.Provider
+    <userContext.Provider
       value={{
         isClicked,
         setIsClicked,
@@ -16,10 +16,10 @@ export const ContextProvider = ({ children }) => {
       }}
     >
       {children}
-    </UserAuth.Provider>
+    </userContext.Provider>
   );
 };
 
 export const useAuth = () => {
-  return useContext(UserAuth);
+  return useContext(userContext);
 };

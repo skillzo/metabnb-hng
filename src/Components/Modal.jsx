@@ -1,5 +1,5 @@
 import React from "react";
-import { useAuth } from "../Context";
+import { useAuth } from "../authContext";
 import Meta from "../Asset/meta.png";
 import WalletConnect from "../Asset/walletConnect.png";
 

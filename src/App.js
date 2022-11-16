@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
+import { ContextProvider } from "./authContext";
+import Home from "./Pages/Home";
+import Place from "./Pages/Place";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Modal from "./Components/Modal";
-import { ContextProvider } from "./Context";
-import Home from "./Pages/Home";
-import Place from "./Pages/Place";
 
 function App() {
   return (
