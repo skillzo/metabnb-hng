@@ -3,7 +3,7 @@ import Wrapper from "../UI/Wrapper";
 import Logo from "../../Asset/GroupmetaLogo.png";
 import { Link } from "react-router-dom";
 
-import { useAuth } from "../../Context";
+import { useAuth } from "../../authContext";
 
 function Header() {
   const { setIsClicked, showMenu, setShowMenu } = useAuth();
